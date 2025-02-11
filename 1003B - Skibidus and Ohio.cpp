@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+#define ll long long
+using namespace std;
+int main(){
+    ll t;
+    cin>>t;
+    while(t--){
+        string s;
+        cin>>s;
+        ll count=0;
+        for(int i=0;i<s.size()-1;i++){
+            if(s[i]==s[i+1]){
+                count=1; break;
+            }
+        }
+        if(s.size()>1 && count) cout<<1<<endl;
+        else cout<<s.size()<<endl;
+    }
+
+    return 0;
+}
